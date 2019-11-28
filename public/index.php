@@ -31,5 +31,7 @@ $routes($app);
 
 $routes = require __DIR__ . '/../src/homePage.php';
 $routes($app);
+$routes = require __DIR__ . '/../src/jogadores.php';
+$routes($app);
 // Run app
 $app->run();

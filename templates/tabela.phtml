@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Perna de Pau | HomePage</title>
+  <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+
+
+  <!--  -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/home/">
+        <img src="https://image.flaticon.com/icons/png/512/8/8314.png" width="30" height="30" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/home/">Home <span class="sr-only">(página atual)</span></a>
+          </li>
+         
+             
+        </ul>
+
+      </div>
+    </nav>
+    <div class="row">
+      <div class="col-12 central pt-5 pb-5">
+        <h1 class="text-center mr-5">Relação de jogadores</h1>   
+         
+      </div>
+    </div>
+
+  
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Jogador</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Número Camiseta</th>
+          <th scope="col">Posição</th>
+          <th scope="col">Editar</th>
+
+        </tr>
+      </thead>
+      <?php
+      foreach ($jogadores as $key => $value) {
+        echo "<tr>";
+        echo "<th scope='row'>";
+        echo "<img class='imagens' src='".$value['foto']."'>";
+        echo "</th>";
+        echo "<td>";
+        echo $value['nome'];
+        echo "</td>";
+        echo "<td >";
+        echo $value['numero'];
+        echo "</td>";
+        echo "<td >";
+        echo $value['posicao'];
+        echo "</td>";
+        echo "<td >";
+        echo "<a href='/apagarJogador/".$value['id']."'>";
+        echo "<i class='fas fa-trash'>"."</i>";
+        echo "</a>";
+        echo "<a href='/editJogador/".$value['id']."'>";
+        echo "<i class='fas fa-edit pl-4'  " . "</i>";
+        echo "</a>";
+        echo "</td>";
+        
+        echo "</tr>";
+      }
+      ?>
+
+  </div>
+
+  </div>
+
+</body>
+
+</html>

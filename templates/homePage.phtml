@@ -3,24 +3,55 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Perna de Pau | Login</title>
+    <title>Perna de Pau | HomePage</title>
     <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
+
+
     <!--  -->
     <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/home/">
+    <img src="https://image.flaticon.com/icons/png/512/8/8314.png" width="30" height="30" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home/">Home <span class="sr-only pt-1">(página atual)</span></a>
+      </li>
+      <li class="nav-item active">
+        
+        <a href="/cadastroJogador/"><button class="btn btn pt-2">Adicionar</button></a>
+      </li>
+    </ul>
+  </div>
+</nav>  
         <div class="row">
             <div class="col-12 central pt-5">
                 <h1 class="text-center mr-5">Perna de Pau</h1>
             </div>
         </div>
-        <div id="background" class="row mx-auto">
-            <div class="col-12 mx-auto pt-5" id="goleiro">Goleiro</div>
+        <div  class="row mx-auto">
+           <div class="col-6 pt-5">
+               <a href="/tabela/2"><img  class="time" src="/img/flamengo.png" alt=""></a>
 
+           </div>
+            <div class="col-6 pt-5">
+            <a href="/tabela/1"> <img class="time" src="/img/rszgremio.png" alt=""></a>
+            </div>
+            </div>
+            
         </div>
+
         </div>
 
     </div>

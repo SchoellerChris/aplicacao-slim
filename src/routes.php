@@ -63,7 +63,7 @@ return function (App $app) {
         $params = $request->getParsedBody();
         $senha = md5($params['senha']);
 
-        $sql = 'INSERT INTO usuario VALUES("", "'.$params['email'].'","'.$senha.'","'.$params['nome'].'")';
+        $sql = 'INSERT INTO usuario VALUES("", "'.$params['email'].'","'.$senha.'","'.$params['nome'].'","'.$params['timeId'].'")';
 
         $resultSet = $conexao->query($sql);
 
